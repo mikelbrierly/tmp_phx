@@ -56,7 +56,7 @@ Let's first take a high level look at the phoenix system as a whole.
     ![generate_gitlab_pat](https://user-images.githubusercontent.com/13723156/149224727-25a7a8ed-af4f-42af-8c51-bb8fcb450ed9.gif)
 
   - Close and re-open the terminal, then authenticate Docker with your PAT so your containers can access everything they need in our private GitLab repositories
-    - Run `docker login -u <NTID> -p ${$GITLAB_PAT} registry.gitlab.com` to authenticate
+    - Run `docker login -u <NTID> -p ${GITLAB_PAT} registry.gitlab.com` to authenticate
       
 ## Using the Phoenix CLI
   
