@@ -52,6 +52,8 @@ Let's first take a high level look at the phoenix system as a whole.
     ![gitlab_pat](https://user-images.githubusercontent.com/13723156/149224531-578dba75-077b-4a85-90e0-9ceaf4512578.gif)
 
   - Add your PAT to an easily accessed env variable
+  
+  TODO: instead of export, just set these vars directly in the .zshrc file
 
     ![generate_gitlab_pat](https://user-images.githubusercontent.com/13723156/149224727-25a7a8ed-af4f-42af-8c51-bb8fcb450ed9.gif)
 
