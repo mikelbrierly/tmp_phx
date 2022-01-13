@@ -59,7 +59,7 @@ Let's first take a high level look at the phoenix system as a whole.
 
   - Close and re-open the terminal, then authenticate Docker with your PAT so your containers can access everything they need in our private GitLab repositories
     - Run `echo $GITLAB_PAT` to verify that your token has been saved as an environment variable. (You should see your token output)
-    - Run `docker login -u <NTID> -p ${GITLAB_PAT} registry.gitlab.com` to authenticate
+    - Run `docker login -u YOUR_NTID -p ${GITLAB_PAT} registry.gitlab.com` to authenticate
       
 ## Using the Phoenix CLI
   
