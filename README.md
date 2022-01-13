@@ -83,7 +83,7 @@ Let's first take a high level look at the phoenix system as a whole.
 ```shell
 phoenix raise
 ```
-_NOTE: It doesn't matter what directory you are in when you run these phoenix commands, because the script written to execute from where you installed the CLI._
+> _If you are in a directory that contains a `docker-compose.yml` file when you run `phoenix raise`, it will use **that** file to start the local AEM env. Otherwise it will execute from the CLI installation location (which is what we're doing here)_
   
 ![phoenix raise start](https://user-images.githubusercontent.com/13723156/149353050-55f07eb6-52b4-46b5-9111-71422e25d868.gif)
 
@@ -102,12 +102,7 @@ password: admin
   
 ![aem login](https://user-images.githubusercontent.com/13723156/149366662-93d0cad6-fe31-4e61-828f-228cf1f267e3.gif)
   
-- After logging in, you can navigate to **sites > digx (digital experience) > t-mobile > us > en (click the checkbox to the left of "en") > edit**
-  - This is how we can view our sites structure, and edit the layout of different AEM pages.
-
-![open digx en page](https://user-images.githubusercontent.com/13723156/149366394-234bb473-4679-4378-b17d-43513c317ef1.gif)
-  
-- You'll notice that when we open up the `en` page to edit it, everything is blank. This is because we don't have any templates or content loaded into our AEM instance.
+- Next we need to get templates and content loaded into our AEM instance
 
   > The `phoenix-platform` repository contains the templates, dependendencies, and a few other other libraries we'll need to get our AEM instance fleshed out.
 
@@ -123,6 +118,7 @@ password: admin
 - Most of the packages you see on this page are automatically installed. But the ones we want to focus in on are the ones that come directly from our phoenix repos. Click on the `com.tmobile.digital.tos.phoenix` group in the left hand navigation to narrow what's displayed.
   
   ![phoenix packages only](https://user-images.githubusercontent.com/13723156/149370318-fcc32624-c4e4-4e76-b6da-db71aa05bbfd.gif)
+  > _You can think of this view as being similar to a `node_modules` folder that contains packages that are installed by a package manager_
 
 - Let's start by installing the packages for `phoenix-platform`. Since AEM is built on Java, these packages need to be installed with Maven (which is kindof like NPM for Java). When we run the package installation command, it's going to find the running instance of AEM, and install the packages there. So we can watch them get installed if we keep our CRX Package manager page open!
   - If you haven't already, go ahead and clone down the [platform repository](https://gitlab.com/tmobile/digital/tos/phoenix/phoenix-platform)
