@@ -62,6 +62,7 @@ Let's first take a high level look at the phoenix system as a whole.
   
 - The platform team has created a powerful CLI tool for us that makes our lives a lot easier. It contains two Docker images, one running nginx, and the other runs a containerized AEM instance.
 - Head over to the [phoenix-cli](https://gitlab.com/tmobile/digital/tos/phoenix/phoenix-cli) repo and follow the **CLI installation** instructions.
+  - TODO add troubleshooting for not being able to open the exec file in terminal, and needing to do it in finder
 - After installation, run `phoenix doctor`, and you should see a successful output. If you see any errors, you'll need to go back and make sure you completed all the previous steps successfully.
   
   ![phoenix doctor](https://user-images.githubusercontent.com/13723156/149347445-ec2593e5-ad3f-41b7-aafd-abb6fe651e16.png)
