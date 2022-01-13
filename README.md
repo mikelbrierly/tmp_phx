@@ -29,6 +29,7 @@ Let's first take a high level look at the phoenix system as a whole.
     ![java_version_check](https://user-images.githubusercontent.com/13723156/149221645-2fdb1efb-31d7-404a-a2c6-958863e42505.gif)
 
   - NOTE: _You may need to set your `JAVA_HOME` environment variable to point directly to where you installed version 11 of Java. [This stackoverflow question](https://stackoverflow.com/questions/22842743/how-to-set-java-home-environment-variable-on-mac-os-x-10-9) should point you in the right direction_
+    - _This command might come in handy for setting that env var - `export JAVA_HOME=$(/usr/libexec/java_home)`_
 - You'll also need [Docker](https://desktop.docker.com/mac/main/amd64/Docker.dmg) installed
   - Make sure to adjust the allocated resources for your containers so that you don't get timeout issues (easiest to change in Docker desktop app)
     - ![docker_resource_settings](https://user-images.githubusercontent.com/13723156/149223110-6d46a613-6cde-4c08-bf05-954a165e14ff.png)
