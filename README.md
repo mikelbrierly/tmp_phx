@@ -244,3 +244,45 @@ password: admin
 - Once we've done that, we'll then be able to see content and components show up when we head into the page editor
 
   ![finally done](https://user-images.githubusercontent.com/13723156/149380052-746f80c4-557e-472d-941a-2ecbaeb608a5.gif)
+
+## Troubleshooting
+
+### Failed to load data
+
+![image](https://i.imgur.com/X4dNupE.png)
+
+If you run into an error that says `fail to load data`, these steps should help get you back on track.
+
+1. Use the phoenix cli to kill, clean, and then restart your docker images
+
+   ```sh
+   phoenix ashes --purge
+   ```
+
+   ```sh
+   phoenix raise
+   ```
+
+2. you may need to run the maven installation command on a couple other repositories ([analytics](https://gitlab.com/tmobile/digital/tos/phoenix/phoenix-analytics) and [unav](https://gitlab.com/tmobile/digital/tos/phoenix/phoenix-unav)). Clone these both down, and run `mvn clean install -PautoInstallSinglePackage` in both to install their packages.
+
+   ```sh
+    git clone git@gitlab.com:tmobile/digital/tos/phoenix/phoenix-unav.git
+
+    cd phoenix-unav
+
+    mvn clean install -PautoInstallSinglePackage
+   ```
+
+   ```sh
+    git clone git@gitlab.com:tmobile/digital/tos/phoenix/phoenix-analytics.git
+
+    cd phoenix-analytics
+
+    mvn clean install -PautoInstallSinglePackage
+   ```
+
+3. Hard refresh your local AEM instance, and you should now be able to access test pages. If you're still having issues, here is [another guide](https://confluencesw.t-mobile.com/pages/viewpage.action?pageId=231318200) for resolving this issue.
+
+### No Components in AEM Local Env
+
+- Paige Libbert put together a [great guide](https://confluencesw.t-mobile.com/pages/viewpage.action?pageId=231318210) for working through this issue.
