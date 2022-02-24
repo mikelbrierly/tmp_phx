@@ -134,15 +134,20 @@ In this document we'll be diving into this step of the process -
 ## Using the Phoenix CLI
 
 - The **platform team** has created a powerful CLI tool for us that makes our lives a lot easier. It contains two Docker images, one running nginx, and the other runs a containerized AEM instance.
-- Head over to the [phoenix-cli](https://gitlab.com/tmobile/digital/tos/phoenix/phoenix-cli) repo and follow the **CLI installation** instructions.
+- Head over to the [phoenix-cli](https://gitlab.com/tmobile/digital/tos/phoenix/phoenix-cli) repo and follow the **CLI installation** instructions. You can stop when you reach `Docker Images`.
+- Read through those first steps carefully though, and make sure not to skim over anything.
 
-  - Read through those steps carefully, and don't forget to add directory to your `PATH`. If you keep the default installation path, it will look like this:
+  - If you hit any snags running the .exec file, try using right-click + 'open' to avoid the "unknown developer" issue.
+
+    ![dl_cli_mac](https://user-images.githubusercontent.com/13723156/153077140-b6504c82-eccd-4f57-a78b-80c3c2998591.gif)
+
+    ![open_cli](https://user-images.githubusercontent.com/13723156/153077164-dc48620d-dcdb-4fc4-907d-820c579334e4.gif)
+
+  - Don't forget to add the directory to your `PATH`. If you keep the default installation path, it will look like this:
 
     ```sh
     export PATH="$PATH:/Users/YOUR_USERNAME/.phoenix-cli"
     ```
-
-  - TODO add gifs of install phx cli with finder
 
 - After installation, restart your terminal and run `phoenix doctor`, and you should see a successful output. If you see any errors, you'll need to go back and make sure you completed all the previous steps successfully.
 
