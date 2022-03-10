@@ -250,6 +250,8 @@ password: admin
 
   ![finally done](https://user-images.githubusercontent.com/13723156/149380052-746f80c4-557e-472d-941a-2ecbaeb608a5.gif)
 
+In the [next guide](./PHOENIX_DS.md) we'll take a look at where the styles come from for these components, and how you can update them!
+
 ## Troubleshooting
 
 ### Failed to load data
