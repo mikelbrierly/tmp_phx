@@ -293,3 +293,33 @@ If you run into an error that says `fail to load data`, these steps should help 
 ### No Components in AEM Local Env
 
 - Paige Libbert put together a [great guide](https://confluencesw.t-mobile.com/pages/viewpage.action?pageId=231318210) for working through this issue.
+
+# Next steps
+
+Now that we have everything running locally for AEM development, you can start to dive into developing for the repo.
+
+## Design System
+
+If you want to get more familiar with the Design System for phoenix, and understand how styles are applied and created for components, check out **[Introduction to the Phoenix Design System]()**
+
+## AEM WKND Guide
+
+![picture 8](https://cdn.jsdelivr.net/gh/mikelbrierly/tmp_phx/0ee47c2efd173b98cdb36d147281ef5eddbb53fd08bcaf0804e22984337cd3a5.png)
+
+If you want to dive into the full end-to-end process of developing components for Phoenix, you should start by completing the **[AEM WKND tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/overview.html?lang=en)**.
+
+> ⚠️ Make sure you are following along with the _AEM Project Archetype_ guide, _not_ the quick site creation with a template.
+
+If you have completed all the steps so far in this guide, then you should have all of the **Required software** prerequisites completed so that you can start work on the WKND tutorial.
+
+> ⚠️ The VSCode AEM Sync plugin is the only one we didn't cover. You may want to follow the guide for installing that tool.
+
+![picture 9](https://cdn.jsdelivr.net/gh/mikelbrierly/tmp_phx/85238e0631631245e00e20a1ccb82bd028f6259bc7f1dc5a9bb024390678ca12.png)
+
+The **AEM Author instance** is the UI you see after logging into your localhost:4502 with `admin` `admin`. If you see this page, then you are all set with your local AEM Author instance.
+
+![picture 10](https://cdn.jsdelivr.net/gh/mikelbrierly/tmp_phx/60445a6a85c58f69e3a021447f94189e0487b3b1c71a4b2172b8b82d134cd13b.png)
+
+After completing the AEM guide, the structure of our code and components in the phoenix-experience repository should make a lot more sense, and you can begin contributing with a similar development process to what the guide just took you through!
+
+![The force will be with you, always](https://media2.giphy.com/media/l1AsJoOWnvy0CuyFq/giphy.gif)
